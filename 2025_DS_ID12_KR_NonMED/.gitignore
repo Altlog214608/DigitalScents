@@ -1,0 +1,73 @@
+# -------------------------
+# Python 기본 무시 항목
+# -------------------------
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+*.manifest
+*.spec
+
+# pipenv, poetry, venv, conda 등 가상환경 폴더
+.venv/
+venv/
+env/
+ENV/
+*.env
+*.env.*
+
+# 로그 파일
+*.log
+
+# -------------------------
+# IDE/편집기 설정
+# -------------------------
+.vscode/
+.idea/
+*.swp
+*.bak
+
+# -------------------------
+# 시스템 파일
+# -------------------------
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# -------------------------
+# 바이너리 / 대용량 파일
+# -------------------------
+*.dll
+*.exe
+*.bin
+*.zip
+*.tar
+*.gz
+*.rar
+*.7z
+*.h5
+*.pt
+*.onnx
+*.model
+*.pb
+
+# -------------------------
+# Jupyter Notebook 체크포인트
+# -------------------------
+.ipynb_checkpoints/
+
+# -------------------------
+# Git 자체 설정/백업 제외
+# -------------------------
+.git/
+.gitattributes
+
+# -------------------------
+# 기타 예외적으로 빌드된 내부 경로 (예시)
+# -------------------------
+dist/ScentSmart/_internal/PySide6/Qt6WebEngineCore.dll

@@ -1,0 +1,16 @@
+{
+	"scent_power": 40,
+	"scent_run_time": 3,
+	"scent_post_delay": 500,
+	"cleaning_power": 80,
+	"cleaning_run_time": 4,
+	"cleaning_post_delay": 500,
+	"scent_emit_interval": 1,
+	"thres_test_max_level": 12,
+	"thres_node_max_num": 7,
+	"thres_node_score_num": 4,
+	"voice_onoff": 1,
+	"result_show_onoff": 1,
+	"front_onoff": 0,
+	"window_bars_onoff": 0
+}

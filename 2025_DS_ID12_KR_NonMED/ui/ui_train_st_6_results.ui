@@ -1,0 +1,582 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1920</width>
+    <height>1080</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Maximum" vsizetype="Maximum">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>1920</width>
+    <height>1080</height>
+   </size>
+  </property>
+  <property name="font">
+   <font>
+    <family>Malgun Gothic</family>
+    <pointsize>16</pointsize>
+   </font>
+  </property>
+  <property name="focusPolicy">
+   <enum>Qt::FocusPolicy::NoFocus</enum>
+  </property>
+  <property name="windowTitle">
+   <string>Digital Olfaction Solution</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QPushButton" name="ui_menu_btn_quit">
+    <property name="geometry">
+     <rect>
+      <x>1807</x>
+      <y>13</y>
+      <width>96</width>
+      <height>96</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>40</width>
+      <height>40</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>16777215</width>
+      <height>16777215</height>
+     </size>
+    </property>
+    <property name="font">
+     <font>
+      <family>Malgun Gothic</family>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+	background-image : url(./ui/images/common/btn_logout.png);
+	border : 0px;
+}
+
+QPushButton::hover{
+	background-image : url(./ui/images/common/btn_logout_over.png);
+	border : 0px;
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_background">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>1920</width>
+      <height>1080</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Malgun Gothic</family>
+      <pointsize>16</pointsize>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel{
+	image : url(./ui/images/train_st/bg_result.png);
+}&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;ui version=&quot;4.0&quot;&gt;
+ &lt;widget name=&quot;__qt_fake_top_level&quot;&gt;
+  &lt;widget class=&quot;QWidget&quot; name=&quot;widget&quot; native=&quot;true&quot;&gt;
+   &lt;property name=&quot;geometry&quot;&gt;
+    &lt;rect&gt;
+     &lt;x&gt;580&lt;/x&gt;
+     &lt;y&gt;750&lt;/y&gt;
+     &lt;width&gt;320&lt;/width&gt;
+     &lt;height&gt;65&lt;/height&gt;
+    &lt;/rect&gt;
+   &lt;/property&gt;
+   &lt;layout class=&quot;QHBoxLayout&quot; name=&quot;horizontalLayout&quot; stretch=&quot;1,2,3,2,2&quot;&gt;
+    &lt;item&gt;
+     &lt;widget class=&quot;QLabel&quot; name=&quot;label_correctNumber_label1&quot;&gt;
+      &lt;property name=&quot;font&quot;&gt;
+       &lt;font&gt;
+        &lt;pointsize&gt;25&lt;/pointsize&gt;
+        &lt;weight&gt;50&lt;/weight&gt;
+        &lt;italic&gt;false&lt;/italic&gt;
+        &lt;bold&gt;false&lt;/bold&gt;
+       &lt;/font&gt;
+      &lt;/property&gt;
+      &lt;property name=&quot;styleSheet&quot;&gt;
+       &lt;string notr=&quot;true&quot;&gt;QLabel{
+	font : 25pt;
+	color : #205f76;
+}&lt;/string&gt;
+      &lt;/property&gt;
+      &lt;property name=&quot;text&quot;&gt;
+       &lt;string&gt;총&lt;/string&gt;
+      &lt;/property&gt;
+     &lt;/widget&gt;
+    &lt;/item&gt;
+    &lt;item&gt;
+     &lt;widget class=&quot;QLabel&quot; name=&quot;label_totalNumber&quot;&gt;
+      &lt;property name=&quot;font&quot;&gt;
+       &lt;font&gt;
+        &lt;pointsize&gt;25&lt;/pointsize&gt;
+        &lt;weight&gt;50&lt;/weight&gt;
+        &lt;italic&gt;false&lt;/italic&gt;
+        &lt;bold&gt;false&lt;/bold&gt;
+       &lt;/font&gt;
+      &lt;/property&gt;
+      &lt;property name=&quot;styleSheet&quot;&gt;
+       &lt;string notr=&quot;true&quot;&gt;QLabel{
+	font : 25pt;
+	color : #205f76;
+}&lt;/string&gt;
+      &lt;/property&gt;
+      &lt;property name=&quot;text&quot;&gt;
+       &lt;string&gt;16&lt;/string&gt;
+      &lt;/property&gt;
+      &lt;property name=&quot;alignment&quot;&gt;
+       &lt;set&gt;Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter&lt;/set&gt;
+      &lt;/property&gt;
+     &lt;/widget&gt;
+    &lt;/item&gt;
+    &lt;item&gt;
+     &lt;widget class=&quot;QLabel&quot; name=&quot;label_correctNumber_label2&quot;&gt;
+      &lt;property name=&quot;font&quot;&gt;
+       &lt;font&gt;
+        &lt;pointsize&gt;25&lt;/pointsize&gt;
+        &lt;weight&gt;50&lt;/weight&gt;
+        &lt;italic&gt;false&lt;/italic&gt;
+        &lt;bold&gt;false&lt;/bold&gt;
+       &lt;/font&gt;
+      &lt;/property&gt;
+      &lt;property name=&quot;styleSheet&quot;&gt;
+       &lt;string notr=&quot;true&quot;&gt;QLabel{
+	font : 25pt;
+	color : #205f76;
+}&lt;/string&gt;
+      &lt;/property&gt;
+      &lt;property name=&quot;text&quot;&gt;
+       &lt;string&gt;문항 중&lt;/string&gt;
+      &lt;/property&gt;
+     &lt;/widget&gt;
+    &lt;/item&gt;
+    &lt;item&gt;
+     &lt;widget class=&quot;QLabel&quot; name=&quot;label_correctNumber&quot;&gt;
+      &lt;property name=&quot;font&quot;&gt;
+       &lt;font&gt;
+        &lt;pointsize&gt;25&lt;/pointsize&gt;
+        &lt;weight&gt;50&lt;/weight&gt;
+        &lt;italic&gt;false&lt;/italic&gt;
+        &lt;bold&gt;false&lt;/bold&gt;
+       &lt;/font&gt;
+      &lt;/property&gt;
+      &lt;property name=&quot;styleSheet&quot;&gt;
+       &lt;string notr=&quot;true&quot;&gt;QLabel{
+	font : 25pt;
+	color : #205f76;
+}&lt;/string&gt;
+      &lt;/property&gt;
+      &lt;property name=&quot;text&quot;&gt;
+       &lt;string&gt;11&lt;/string&gt;
+      &lt;/property&gt;
+      &lt;property name=&quot;alignment&quot;&gt;
+       &lt;set&gt;Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter&lt;/set&gt;
+      &lt;/property&gt;
+     &lt;/widget&gt;
+    &lt;/item&gt;
+    &lt;item&gt;
+     &lt;widget class=&quot;QLabel&quot; name=&quot;label_correctNumber_label3&quot;&gt;
+      &lt;property name=&quot;font&quot;&gt;
+       &lt;font&gt;
+        &lt;pointsize&gt;25&lt;/pointsize&gt;
+        &lt;weight&gt;50&lt;/weight&gt;
+        &lt;italic&gt;false&lt;/italic&gt;
+        &lt;bold&gt;false&lt;/bold&gt;
+       &lt;/font&gt;
+      &lt;/property&gt;
+      &lt;property name=&quot;styleSheet&quot;&gt;
+       &lt;string notr=&quot;true&quot;&gt;QLabel{
+	font : 25pt;
+	color : #205f76;
+}&lt;/string&gt;
+      &lt;/property&gt;
+      &lt;property name=&quot;text&quot;&gt;
+       &lt;string&gt;문항&lt;/string&gt;
+      &lt;/property&gt;
+     &lt;/widget&gt;
+    &lt;/item&gt;
+   &lt;/layout&gt;
+  &lt;/widget&gt;
+  &lt;widget class=&quot;QWidget&quot; name=&quot;widget&quot; native=&quot;true&quot;&gt;
+   &lt;property name=&quot;geometry&quot;&gt;
+    &lt;rect&gt;
+     &lt;x&gt;350&lt;/x&gt;
+     &lt;y&gt;750&lt;/y&gt;
+     &lt;width&gt;190&lt;/width&gt;
+     &lt;height&gt;65&lt;/height&gt;
+    &lt;/rect&gt;
+   &lt;/property&gt;
+   &lt;layout class=&quot;QHBoxLayout&quot; name=&quot;horizontalLayout_3&quot;&gt;
+    &lt;item&gt;
+     &lt;widget class=&quot;QLabel&quot; name=&quot;label_correctRate&quot;&gt;
+      &lt;property name=&quot;sizePolicy&quot;&gt;
+       &lt;sizepolicy hsizetype=&quot;Fixed&quot; vsizetype=&quot;Preferred&quot;&gt;
+        &lt;horstretch&gt;0&lt;/horstretch&gt;
+        &lt;verstretch&gt;0&lt;/verstretch&gt;
+       &lt;/sizepolicy&gt;
+      &lt;/property&gt;
+      &lt;property name=&quot;font&quot;&gt;
+       &lt;font&gt;
+        &lt;pointsize&gt;36&lt;/pointsize&gt;
+        &lt;weight&gt;50&lt;/weight&gt;
+        &lt;italic&gt;false&lt;/italic&gt;
+        &lt;bold&gt;false&lt;/bold&gt;
+       &lt;/font&gt;
+      &lt;/property&gt;
+      &lt;property name=&quot;styleSheet&quot;&gt;
+       &lt;string notr=&quot;true&quot;&gt;QLabel{
+	font : 36pt;
+	color : #205f76;
+}&lt;/string&gt;
+      &lt;/property&gt;
+      &lt;property name=&quot;text&quot;&gt;
+       &lt;string&gt;68.2&lt;/string&gt;
+      &lt;/property&gt;
+     &lt;/widget&gt;
+    &lt;/item&gt;
+    &lt;item&gt;
+     &lt;widget class=&quot;QLabel&quot; name=&quot;label_correctRate_2&quot;&gt;
+      &lt;property name=&quot;font&quot;&gt;
+       &lt;font&gt;
+        &lt;pointsize&gt;36&lt;/pointsize&gt;
+        &lt;weight&gt;50&lt;/weight&gt;
+        &lt;italic&gt;false&lt;/italic&gt;
+        &lt;bold&gt;false&lt;/bold&gt;
+       &lt;/font&gt;
+      &lt;/property&gt;
+      &lt;property name=&quot;styleSheet&quot;&gt;
+       &lt;string notr=&quot;true&quot;&gt;QLabel{
+	font : 36pt;
+	color : #205f76;
+}&lt;/string&gt;
+      &lt;/property&gt;
+      &lt;property name=&quot;text&quot;&gt;
+       &lt;string&gt;%&lt;/string&gt;
+      &lt;/property&gt;
+     &lt;/widget&gt;
+    &lt;/item&gt;
+   &lt;/layout&gt;
+  &lt;/widget&gt;
+  &lt;widget class=&quot;QTableWidget&quot; name=&quot;resultTable&quot;&gt;
+   &lt;property name=&quot;geometry&quot;&gt;
+    &lt;rect&gt;
+     &lt;x&gt;974&lt;/x&gt;
+     &lt;y&gt;188&lt;/y&gt;
+     &lt;width&gt;877&lt;/width&gt;
+     &lt;height&gt;682&lt;/height&gt;
+    &lt;/rect&gt;
+   &lt;/property&gt;
+   &lt;property name=&quot;sizePolicy&quot;&gt;
+    &lt;sizepolicy hsizetype=&quot;Preferred&quot; vsizetype=&quot;Preferred&quot;&gt;
+     &lt;horstretch&gt;0&lt;/horstretch&gt;
+     &lt;verstretch&gt;0&lt;/verstretch&gt;
+    &lt;/sizepolicy&gt;
+   &lt;/property&gt;
+   &lt;property name=&quot;font&quot;&gt;
+    &lt;font&gt;
+     &lt;pointsize&gt;20&lt;/pointsize&gt;
+    &lt;/font&gt;
+   &lt;/property&gt;
+   &lt;property name=&quot;layoutDirection&quot;&gt;
+    &lt;enum&gt;Qt::LeftToRight&lt;/enum&gt;
+   &lt;/property&gt;
+   &lt;property name=&quot;styleSheet&quot;&gt;
+    &lt;string notr=&quot;true&quot;&gt;QHeaderView::section:horizontal { 
+	color : #205f76; 
+	font : 10pt;
+	background-image : url(./ui/images/common/tb_header.png);
+	border : 0px;
+	border-right : 1px solid #8dbfc9;
+}&lt;/string&gt;
+   &lt;/property&gt;
+   &lt;property name=&quot;gridStyle&quot;&gt;
+    &lt;enum&gt;Qt::SolidLine&lt;/enum&gt;
+   &lt;/property&gt;
+   &lt;property name=&quot;rowCount&quot;&gt;
+    &lt;number&gt;12&lt;/number&gt;
+   &lt;/property&gt;
+   &lt;property name=&quot;columnCount&quot;&gt;
+    &lt;number&gt;8&lt;/number&gt;
+   &lt;/property&gt;
+   &lt;attribute name=&quot;horizontalHeaderCascadingSectionResizes&quot;&gt;
+    &lt;bool&gt;false&lt;/bool&gt;
+   &lt;/attribute&gt;
+   &lt;attribute name=&quot;horizontalHeaderHighlightSections&quot;&gt;
+    &lt;bool&gt;true&lt;/bool&gt;
+   &lt;/attribute&gt;
+   &lt;attribute name=&quot;horizontalHeaderShowSortIndicator&quot; stdset=&quot;0&quot;&gt;
+    &lt;bool&gt;false&lt;/bool&gt;
+   &lt;/attribute&gt;
+   &lt;attribute name=&quot;horizontalHeaderStretchLastSection&quot;&gt;
+    &lt;bool&gt;false&lt;/bool&gt;
+   &lt;/attribute&gt;
+   &lt;attribute name=&quot;verticalHeaderVisible&quot;&gt;
+    &lt;bool&gt;false&lt;/bool&gt;
+   &lt;/attribute&gt;
+   &lt;attribute name=&quot;verticalHeaderHighlightSections&quot;&gt;
+    &lt;bool&gt;true&lt;/bool&gt;
+   &lt;/attribute&gt;
+   &lt;attribute name=&quot;verticalHeaderMinimumSectionSize&quot;&gt;
+    &lt;number&gt;30&lt;/number&gt;
+   &lt;/attribute&gt;
+   &lt;attribute name=&quot;verticalHeaderShowSortIndicator&quot; stdset=&quot;0&quot;&gt;
+    &lt;bool&gt;false&lt;/bool&gt;
+   &lt;/attribute&gt;
+   &lt;attribute name=&quot;verticalHeaderStretchLastSection&quot;&gt;
+    &lt;bool&gt;false&lt;/bool&gt;
+   &lt;/attribute&gt;
+   &lt;row/&gt;
+   &lt;row/&gt;
+   &lt;row/&gt;
+   &lt;row/&gt;
+   &lt;row/&gt;
+   &lt;row/&gt;
+   &lt;row/&gt;
+   &lt;row/&gt;
+   &lt;row/&gt;
+   &lt;row/&gt;
+   &lt;row/&gt;
+   &lt;row/&gt;
+   &lt;column/&gt;
+   &lt;column/&gt;
+   &lt;column/&gt;
+   &lt;column/&gt;
+   &lt;column/&gt;
+   &lt;column/&gt;
+   &lt;column/&gt;
+   &lt;column/&gt;
+  &lt;/widget&gt;
+ &lt;/widget&gt;
+ &lt;resources/&gt;
+&lt;/ui&gt;
+</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QTableWidget" name="resultTable">
+    <property name="geometry">
+     <rect>
+      <x>974</x>
+      <y>188</y>
+      <width>877</width>
+      <height>682</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="font">
+     <font>
+      <family>맑은 고딕</family>
+      <pointsize>20</pointsize>
+     </font>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LayoutDirection::LeftToRight</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QTableView::item{
+	border : 0px;
+    border-bottom : 1px solid #8dbfc9;
+	color : #205f76; 
+	font : 20pt;
+}
+
+QTableView QTableCornerButton::section {
+	background-image : url(./ui/images/common/tb_header.png);
+	border : 0px;
+	border-left : 1px solid qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,stop: 0 lightgray, stop: 0.4 white,stop: 1 white);
+	border-right: 1px solid #8dbfc9;
+}
+
+QHeaderView::section:horizontal { 
+	color : #205f76; 
+	font : 20pt;
+	background-image : url(./ui/images/common/tb_header.png);
+	border : 0px;
+	border-left : 1px solid qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,stop: 0 lightgray, stop: 0.4 white,stop: 1 white);
+	border-right: 1px solid #8dbfc9;
+}
+
+QHeaderView::section:vertical { 
+	color : #205f76; 
+	font : 20pt;
+	background-color : white;
+	border : 0px;
+	border-bottom : 1px solid #8dbfc9;
+}
+
+QHeaderView { 
+	qproperty-defaultAlignment: AlignCenter; 
+}
+
+QTableView QTable{
+	border-right : 1px solid #8dbfc9;
+}</string>
+    </property>
+    <property name="showGrid">
+     <bool>false</bool>
+    </property>
+    <property name="gridStyle">
+     <enum>Qt::PenStyle::SolidLine</enum>
+    </property>
+    <property name="sortingEnabled">
+     <bool>false</bool>
+    </property>
+    <property name="cornerButtonEnabled">
+     <bool>true</bool>
+    </property>
+    <property name="rowCount">
+     <number>0</number>
+    </property>
+    <property name="columnCount">
+     <number>0</number>
+    </property>
+    <attribute name="horizontalHeaderCascadingSectionResizes">
+     <bool>false</bool>
+    </attribute>
+    <attribute name="horizontalHeaderHighlightSections">
+     <bool>true</bool>
+    </attribute>
+    <attribute name="horizontalHeaderShowSortIndicator" stdset="0">
+     <bool>false</bool>
+    </attribute>
+    <attribute name="horizontalHeaderStretchLastSection">
+     <bool>false</bool>
+    </attribute>
+    <attribute name="verticalHeaderVisible">
+     <bool>true</bool>
+    </attribute>
+    <attribute name="verticalHeaderCascadingSectionResizes">
+     <bool>false</bool>
+    </attribute>
+    <attribute name="verticalHeaderMinimumSectionSize">
+     <number>50</number>
+    </attribute>
+    <attribute name="verticalHeaderDefaultSectionSize">
+     <number>50</number>
+    </attribute>
+    <attribute name="verticalHeaderHighlightSections">
+     <bool>false</bool>
+    </attribute>
+    <attribute name="verticalHeaderShowSortIndicator" stdset="0">
+     <bool>false</bool>
+    </attribute>
+    <attribute name="verticalHeaderStretchLastSection">
+     <bool>false</bool>
+    </attribute>
+   </widget>
+   <widget class="QLineEdit" name="chartLocation">
+    <property name="geometry">
+     <rect>
+      <x>110</x>
+      <y>220</y>
+      <width>790</width>
+      <height>480</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>그래프 자리</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignmentFlag::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_confirm">
+    <property name="geometry">
+     <rect>
+      <x>800</x>
+      <y>933</y>
+      <width>320</width>
+      <height>130</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Malgun Gothic</family>
+      <pointsize>24</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+	background-image : url(./ui/images/common_locale/btn_home.png);
+	border : 0px;
+}
+
+QPushButton::hover{
+	background-image : url(./ui/images/common_locale/btn_home_over.png);
+	border : 0px;
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="scentLineChartWidget" name="widgetChart" native="true">
+    <property name="geometry">
+     <rect>
+      <x>110</x>
+      <y>220</y>
+      <width>791</width>
+      <height>481</height>
+     </rect>
+    </property>
+   </widget>
+   <zorder>label_background</zorder>
+   <zorder>ui_menu_btn_quit</zorder>
+   <zorder>resultTable</zorder>
+   <zorder>chartLocation</zorder>
+   <zorder>pushButton_confirm</zorder>
+   <zorder>widgetChart</zorder>
+  </widget>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>scentLineChartWidget</class>
+   <extends>QWidget</extends>
+   <header>scentChartWidgetFile</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>
