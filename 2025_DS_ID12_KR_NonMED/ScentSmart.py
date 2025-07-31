@@ -94,7 +94,7 @@ class UiDlg(QWidget):
     
     # 창 모양
     def setWindowBySetting(self, dialog):
-        if dsSetting.dsParam['window_bars_onoff'] != 1:
+        if dsSetting.dsParam['window_bars_onoff'] == 1:
             dialog.setWindowFlags(Qt.WindowType.FramelessWindowHint) # 강제 설정해야 문제 상황 없을 것
         if dsSetting.dsParam['front_onoff'] == 1:
             dialog.setWindowFlags(Qt.WindowType.WindowStaysOnTopHint)
@@ -230,6 +230,7 @@ class UiDlg(QWidget):
         self.ui_menu_dlg.ui_menu_btn_test_results.setVisible(False)
         self.ui_menu_dlg.ui_menu_btn_settings.clicked.connect(
             self.uiMenuBtnSettings)
+        # self.ui_menu_dlg.pb_test.setVisible(False)
         self.ui_menu_dlg.pb_test.clicked.connect(
             self.uiMenuBtnTest)
         self.ui_menu_dlg.ui_menu_btn_train_st.setVisible(False)
@@ -1011,6 +1012,9 @@ class UiDlg(QWidget):
                 "bytesize": dsSerial.DATABITS[self.ui_data_protocol_dlg.comboBox_databits.currentIndex()],
                 "flow_control": dsSerial.FLOWCONTROL[self.ui_data_protocol_dlg.comboBox_flowcontrol.currentIndex()],
                 "parity": dsSerial.PARITY[self.ui_data_protocol_dlg.comboBox_parity.currentIndex()],
+
+
+                
                 "stop_bits": dsSerial.STOPBITS[self.ui_data_protocol_dlg.comboBox_stopbits.currentIndex()],
             }
             dsSerial._connect(self._serial, self._serial_read_thread, **serial_info)
